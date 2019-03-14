@@ -8,7 +8,7 @@ if [ -e tslint.json ]; then
 
     # Run it.
     yarn install  --frozen-lockfile
-    tslint -c tslint.json -t \"stylish\" -e \"node_modules/**/*.ts\" -e \"**/*.d.ts\" \"./**/*.ts\" -p .
+    tslint -c tslint.json -e \"node_modules/**/*.ts\" -e \"**/*.d.ts\" \"./**/*.ts\" -p .
 
     # Preserve the exit-code
     exit $?
