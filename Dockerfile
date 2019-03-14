@@ -11,7 +11,8 @@ LABEL homepage="https://github.com:r3dsm0k3/tslinter"
 RUN apk --no-cache add \
   curl~=7 \
   jq~=1.6 \
-  bash~=4
+  bash~=4 \
+  git
 
 RUN npm install -g yarn tslint@5.12.1 typescript@3.2.4
 
