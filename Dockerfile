@@ -1,4 +1,4 @@
-FROM stocard:node:10
+FROM stocard/node:10
 LABEL "com.github.actions.name"="lint-runner"
 LABEL "com.github.actions.description"="run ts-lint against the typescript codebase"
 LABEL "com.github.actions.icon"="eye"
